@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  thymeleaf:
+    cache: false
+logging:
+  level:
+    root: warn
+    com.example.blog: info
+  file:
+    path: D:/log/myLog
+    name: blog-pro.log
+server:
+  port: 8888

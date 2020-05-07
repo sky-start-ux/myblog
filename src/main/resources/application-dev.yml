@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.example.blog: debug
+  file:
+    name: blog-dev.log
+    path: D:/log/myLog
