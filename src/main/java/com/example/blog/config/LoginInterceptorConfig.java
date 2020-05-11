@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginInterceptorConfig extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if (CookieUtils.getCookies(request).get("user") == null){
+        if (request.getSession().getAttribute("user") == null){
             response.sendRedirect("/admin");
             return false;
         }
