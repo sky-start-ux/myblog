@@ -64,7 +64,7 @@
                 </div>
             </div>
             <th:block th:each="item:${page}">
-            <h3 class="ui center aligned header" th:text="${item.key}">2017</h3>
+            <h3 class="ui center aligned header" th:text="${item.getKey()}">2017</h3>
             <div class="ui fluid vertical menu">
                 <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" class="item" th:each="blog:${item.getValue().content}">
                     <span>
@@ -134,6 +134,7 @@
         </div>
     </footer>
 
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 <script>
@@ -150,6 +151,7 @@
     var beforePageId = $('#before-pageId').val();
     $('#before-a').attr('href','http://'+uri+'/archives/' + '?page=' + beforePageId);
     $('#next-a').attr('href','http://'+uri+'/archives/' + '?page=' + nextPageId);
+
 </script>
 </body>
 </html>

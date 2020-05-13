@@ -145,6 +145,7 @@ public class BlogServiceImpl implements BlogService {
         List<String> years = repository.findGroupYear();
         Map<String,Page<Blog>> map = new HashMap<>();
         for (String year : years) {
+            //System.out.println(year);
             Page<Blog> list = repository.findByYear(pageable, year);
             map.put(year,list);
         }
