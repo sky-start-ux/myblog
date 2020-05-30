@@ -10,7 +10,7 @@ logging:
     root: warn
     com.example.blog: info
   file:
-    path: D:/log/myLog
+    path: log/myLog
     name: blog-pro.log
 server:
-  port: 8888
+  port: 8080

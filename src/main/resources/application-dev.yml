@@ -10,4 +10,4 @@ logging:
     com.example.blog: debug
   file:
     name: blog-dev.log
-    path: D:/log/myLog
+    path: /log/myLog
