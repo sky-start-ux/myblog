@@ -176,6 +176,9 @@
     $('.menu.toggle').click(function () {
        $('.m-item').toggleClass('m-mobile-hide');
     });
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
     $('#newBlog-container').load(/*[[@{footer/tags}]]*/"/footer/tags");
     var uri = window.location.host;
     var tagsId = $('#tagsId').val();

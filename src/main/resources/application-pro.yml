@@ -13,4 +13,4 @@ logging:
     path: log/myLog
     name: blog-pro.log
 server:
-  port: 8080
+  port: 80

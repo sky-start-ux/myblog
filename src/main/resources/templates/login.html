@@ -128,7 +128,7 @@
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <p class="m-text-lined m-text-spaced m-opacity-mini">Copyright © 1996 - 2018 SINA Corporation, All Rights Reserved</p>
+
     </div>
 </footer>
 
@@ -152,6 +152,12 @@
                 }]
             }
         }
+    });
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
     });
     $('#newBlog-container').load(/*[[@{footer/login}]]*/"/footer/login");
 </script>
