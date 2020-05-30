@@ -9,7 +9,6 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptorConfig()).addPathPatterns("/admin/*")
                 .excludePathPatterns("/admin")
-                .excludePathPatterns("/admin/login")
-                .excludePathPatterns("/admin/register");
+                .excludePathPatterns("/admin/login");
     }
 }

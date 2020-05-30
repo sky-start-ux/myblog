@@ -1,13 +1,9 @@
 package com.example.blog.service.impl;
 
 import com.example.blog.domain.Tag;
-import com.example.blog.domain.Type;
-import com.example.blog.domain.User;
 import com.example.blog.exception.NotFoundException;
 import com.example.blog.repository.TagsRepository;
-import com.example.blog.repository.UserRepository;
 import com.example.blog.service.TagsService;
-import com.example.blog.utils.UsersUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

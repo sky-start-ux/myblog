@@ -1,12 +1,7 @@
 package com.example.blog.controller;
 
 import com.example.blog.domain.Tag;
-import com.example.blog.domain.User;
 import com.example.blog.service.TagsService;
-import com.example.blog.service.UserService;
-import com.example.blog.service.impl.TagsServiceImpl;
-import com.example.blog.utils.CookieUtils;
-import com.example.blog.utils.UsersUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -20,10 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.List;
-import java.util.Map;
 
 @Controller
 @RequestMapping("/admin")

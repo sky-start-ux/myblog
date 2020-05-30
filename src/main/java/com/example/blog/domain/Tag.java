@@ -17,17 +17,6 @@ public class Tag {
     @ManyToMany(mappedBy = "tags")
     private List<Blog> blogs = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "tags")
-    private List<User> users = new ArrayList<>();
-
-    public List<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(List<User> users) {
-        this.users = users;
-    }
-
     public Long getId() {
         return id;
     }

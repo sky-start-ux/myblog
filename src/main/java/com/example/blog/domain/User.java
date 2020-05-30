@@ -31,13 +31,6 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Blog> blogs = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "users")
-    private List<Type> types = new ArrayList<>();
-
-
-    @ManyToMany(cascade = {CascadeType.PERSIST})
-    private List<Tag> tags = new ArrayList<>();
-
     private boolean IsAdmin;
 
     public boolean isAdmin() {
@@ -46,22 +39,6 @@ public class User {
 
     public void setAdmin(boolean admin) {
         IsAdmin = admin;
-    }
-
-    public List<Type> getTypes() {
-        return types;
-    }
-
-    public void setTypes(List<Type> types) {
-        this.types = types;
-    }
-
-    public List<Tag> getTags() {
-        return tags;
-    }
-
-    public void setTags(List<Tag> tags) {
-        this.tags = tags;
     }
 
     public String getWeChatQrCode() {

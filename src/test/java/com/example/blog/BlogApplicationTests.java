@@ -2,18 +2,12 @@ package com.example.blog;
 
 
 import com.example.blog.domain.Comment;
-import com.example.blog.domain.Tag;
-import com.example.blog.domain.Type;
 import com.example.blog.domain.User;
 import com.example.blog.repository.*;
 import com.example.blog.service.BlogService;
-import com.example.blog.utils.UsersUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 
 
 import java.util.*;

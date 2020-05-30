@@ -14,8 +14,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Date;
 
-@Controller
-@RequestMapping("/admin")
 public class RegisterController {
 
     @Autowired

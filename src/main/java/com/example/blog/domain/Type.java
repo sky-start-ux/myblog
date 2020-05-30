@@ -17,16 +17,6 @@ public class Type {
     @OneToMany(mappedBy = "type")
     private List<Blog> blogs = new ArrayList<>();
 
-    @ManyToMany(cascade = {CascadeType.PERSIST})
-    private List<User> users = new ArrayList<>();
-
-    public List<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(List<User> users) {
-        this.users = users;
-    }
 
     public Long getId() {
         return id;
