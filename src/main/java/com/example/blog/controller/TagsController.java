@@ -24,7 +24,7 @@ public class TagsController {
     private TagsService service;
 
     @GetMapping("/tags")
-    public String types(@PageableDefault(size = 1,sort = {"id"},direction = Sort.Direction.DESC)
+    public String types(@PageableDefault(size = 8,sort = {"id"},direction = Sort.Direction.DESC)
                                     Pageable pageable, Model model){
         model.addAttribute("page",service.listTags(pageable));
         return "admin-tags";
